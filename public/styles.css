@@ -562,6 +562,12 @@ body {
     text-align: center;
 }
 
+ iframe {
+    width: 1000px;
+    height: 562.5px;
+    max-width: 100%;
+  }
+
 
 @media screen and (max-width: 960px) {
     .services {
@@ -571,6 +577,50 @@ body {
     .services h1 {
         font-size: 2rem;
         margin-top: 12rem;
+    }
+
+     table, thead, tbody, th, td, tr {
+      display: block;
+      width: 100%;
+    }
+
+    /* Hide the grouped headers (they don't make sense vertically) */
+    thead tr:first-child {
+      display: none;
+    }
+
+    /* Each subject becomes its own “card” */
+    tr {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    td {
+      text-align: left;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+    }
+
+    td:last-child {
+      border-bottom: none;
+    }
+
+    td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      flex: 1;
+      text-align: left;
+    }
+
+     iframe {
+      width: 960px;
+      height: 540px;
     }
 }
 
@@ -583,6 +633,48 @@ body {
     }
     .services__card {
         width: 300px;
+    }
+
+     table, thead, tbody, th, td, tr {
+      display: block;
+      width: 100%;
+    }
+
+    thead tr:first-child {
+      display: none;
+    }
+
+    tr {
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: #fff;
+    }
+
+    td {
+      text-align: left;
+      border: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+    }
+
+    td:last-child {
+      border-bottom: none;
+    }
+
+    td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      flex: 1;
+      text-align: left;
+    }
+
+     iframe {
+      width: 480px;
+      height: 270px;
     }
 }
 
