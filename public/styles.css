@@ -120,12 +120,12 @@ body {
 }
 
 #mobile-menu {
-    display: none; /* Hide hamburger on desktop */
+    display: none;
 }
 
 @media screen and (max-width: 960px) {
     #mobile-menu {
-        display: block; /* Show hamburger on mobile */
+        display: block; 
     }
 
     .navbar__container {
@@ -584,12 +584,10 @@ body {
       width: 100%;
     }
 
-    /* Hide the grouped headers (they don't make sense vertically) */
     thead tr:first-child {
       display: none;
     }
 
-    /* Each subject becomes its own “card” */
     tr {
       margin-bottom: 1rem;
       border: 1px solid #ccc;
@@ -707,7 +705,7 @@ body {
 
 .footer__link--wrapper {
     display: flex;
-    justify-content: center; /* Add this */
+    justify-content: center;
     width: 100%;   
     gap: 200px;
 }
@@ -739,6 +737,14 @@ body {
 .footer__link--items a:hover {
     color: #e9e9e9;
     transition: 0.3s ease-out;
+}
+
+.references {
+    max-width: 1000px;
+    width: 100%;
+    color: #fff;
+    margin-top: 40px;
+    padding: 0 20px;
 }
 
 /* Social Media Icons */
